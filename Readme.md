@@ -3,9 +3,9 @@
 
 Group: AM31
 
-Professor : Alessandro Margara
+Professor: Alessandro Margara
 
-Final Score : 30 cum laude
+Final Score: 30 cum laude
 
 ## Implemented functions: 
 

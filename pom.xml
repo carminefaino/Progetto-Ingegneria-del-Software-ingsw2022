@@ -9,14 +9,12 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>AM31</name>
-  <url>https://github.com/ChristianDiDiego/ingsw2022-AM31</url>
+  <url>https://github.com/carminefaino/ingsw2022-AM31</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>18</maven.compiler.source>
     <maven.compiler.target>18</maven.compiler.target>
-    <sonar.exclusions>**/client/**/*,**/listeners/**/*,**/observer/**/*,**/server/**/*,**/utilities/**/*,**/view/**/*,**/ClientApp.java,**/ServerApp.java,**/Eryantis.java</sonar.exclusions>
-    <sonar.coverage.exclusions>**/client/**/*,**/listeners/**/*,**/observer/**/*,**/server/**/*,**/utilities/**/*,**/view/**/*,**/ClientApp.java,**/ServerApp.java,**/Eryantis.java</sonar.coverage.exclusions>
   </properties>
 
   <dependencies>
@@ -136,38 +134,9 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.7.0.1746</version>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.7</version>
-        <configuration>
-          <excludes>
-          </excludes>
-        </configuration>
-        <executions>
-          <execution>
-            <id>default-prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>jacoco-report</id>
-            <phase>test</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
